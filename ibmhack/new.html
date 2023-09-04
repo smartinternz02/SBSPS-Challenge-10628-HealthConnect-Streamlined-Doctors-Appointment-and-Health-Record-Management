@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Appointment Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>.header {
+        padding: 2rem;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        background-color: #FFAC9A;
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 100px;
+      }</style>
+</head>
+<body>
+    <style>
+    body{
+        background-image:url("./img4.jpg") ;
+        padding: 2rem;
+        margin:20px;
+        font-size: large;
+        background-size: cover;
+        text-align: center;
+        margin-right: 200px;
+        background-color: #F17D64;
+        
+    }
+    
+    
+    .form-container {
+        max-width: 800px;
+        margin-left: 250px;
+        padding: 10rem;
+        background-color: #FFAC9A;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 0px;
+        background-image: url("./img5.jpg");
+        background-size: cover;
+        text-align: center;
+        
+    }
+    
+    .text1{
+        color: #000;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: larger;
+        font-weight: BOLD;
+        
+    }
+    
+    </style>
+    <div class="header">
+        <h1>HOSPITAL MANAGEMENT SHEET</h1>
+        
+      </div>
+    <div class="form-container">
+        <form action="/print_value" method="post">
+            <div class="text1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            
+            <label for="subject">Subject:</label>
+            
+            <input type="text" id="subject" name="subject" required style="height:200px"><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+            <label for="date">TIME</label>
+            <input type="time" id="time" name="time" required><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+  
+</body>
+
+</html>
